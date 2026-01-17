@@ -1,7 +1,7 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 #include <behaviors/mouse_keys.dtsi>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV 1
@@ -14,57 +14,47 @@
         compatible = "zmk,keymap";
 
         // Layer 0: Default (QMK Layer 0をマッピング)
+
         base {
             display-name = "BASE";
             bindings = <
-                &trans &kp Q &kp W &kp E &kp R &kp T                     &kp Y &kp U &kp I &kp O &kp P &trans
-                &trans &mt LSHFT A &kp S &kp D &kp F &kp G               &kp H &kp J &kp K &kp L &mt LSHFT TAB &trans
-                &trans &lt SYS Z &kp X &kp C &kp V &kp B                 &kp N &kp M &kp COMMA &lt SYS DOT &lt MOUSE FSLH &trans
-                &trans &mt LCTRL INT5 &kp LALT &kp LGUI &lt SYM TAB &lt NAV SPACE &mt LCTRL ESC &kp BSPC &mt LALT RET &trans &trans &lt NAV INT4 &trans
+&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp MINUS  &kp LEFT_CONTROL  &lt 2 A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &mt LSHFT SEMICOLON  &mt RIGHT_CONTROL TAB  &mt LEFT_SHIFT LANGUAGE_1  &mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &lt 3 COMMA  &lt SYS DOT  &lt MOUSE FSLH  &mt LEFT_SHIFT LANGUAGE_2  &lt 2 LEFT_GUI  &lt 1 SPACE  &mt LEFT_CONTROL ESCAPE  &kp BACKSPACE  &lt SYM ENTER  &mt RIGHT_ALT ENTER
             >;
         };
 
         // Layer 1: Navigation/Function (QMK Layer 2)
+
         nav {
             display-name = "NAV";
             bindings = <
-                &trans &trans &trans &kp LG(UP) &trans &kp F8            &kp LC(LA(F11)) &kp HOME &kp UP &kp END &kp GRAVE &trans
-                &trans &kp LSHFT &kp LS(LG(LEFT)) &kp LG(DOWN) &kp LS(LG(RIGHT)) &trans  &kp PG_UP &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN &trans
-                &trans &kp LCTRL &kp F2 &kp F3 &kp F4 &kp F5              &kp F9 &kp F10 &kp F11 &kp F12 &trans &trans
-                &trans &trans &trans &trans &trans &trans                &trans &trans &trans &trans &trans &trans &trans
+&trans  &trans  &trans  &kp LG(UP)  &trans  &kp F8  &kp LC(LA(F11))  &kp HOME  &kp UP  &kp END  &kp GRAVE  &trans  &trans  &kp LSHFT  &kp LS(LG(LEFT))  &kp LG(DOWN)  &kp LS(LG(RIGHT))  &trans  &kp PG_UP  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans  &trans  &kp LCTRL  &kp F2  &kp F3  &kp F4  &kp F5  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         // Layer 2: Numbers and Symbols (QMK Layer 3)
+
         sys {
             display-name = "SYS";
             bindings = <
-                &trans &trans &kp N7 &kp N8 &kp N9 &trans                 &trans &kp LS(LBKT) &kp LS(RBKT) &kp LS(LG(S)) &kp PSCRN &trans
-                &trans &trans &kp N4 &kp N5 &kp N6 &trans                 &trans &kp LS(N9) &kp LS(N0) &trans &kp BSLH &trans
-                &trans &trans &kp N1 &kp N2 &kp N3 &trans                 &trans &kp LBKT &kp RBKT &trans &kp SEMI &trans
-                &trans &trans &trans &trans &trans &kp N0                 &trans &trans &trans &trans &trans &trans &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans  &trans  &kp LS(LBKT)  &kp LS(RBKT)  &kp LS(LG(S))  &kp PSCRN  &trans  &trans  &trans  &kp N4  &kp N5  &kp N6  &trans  &trans  &kp LS(N9)  &kp LS(N0)  &trans  &kp BSLH  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans  &kp LBKT  &kp RBKT  &trans  &kp SEMI  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0
             >;
         };
 
         // Layer 3: Mouse (QMK Layer 4 - マウスボタン対応)
+
         mouse {
             display-name = "MOUSE";
             bindings = <
-                &trans &trans &trans &trans &trans &trans                 &trans &trans &mkp MCLK &trans &trans &trans
-                &trans &trans &trans &trans &mkp LCLK &trans              &trans &mkp LCLK &mkp RCLK &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans                 &trans &kp LC(C) &kp LC(V) &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans                 &trans &mkp MB4 &mkp MB5 &trans &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         // Layer 4: Symbols (QMK Layer 6)
+
         sym {
             display-name = "SYM";
             bindings = <
-                &trans &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)     &trans &trans &trans &trans &kp MINUS &trans
-                &trans &kp LSHFT &kp LS(N6) &kp LS(N8) &kp LS(N7) &kp LS(BSLH)     &trans &trans &trans &trans &kp EQUAL &trans
-                &trans &trans &kp SEMI &kp LS(SEMI) &kp LS(SQT) &kp SQT            &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans                          &trans &kp DEL &trans &trans &trans &trans &trans
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &trans  &trans  &trans  &trans  &kp MINUS  &trans  &trans  &kp LSHFT  &kp LS(N6)  &kp LS(N8)  &kp LS(N7)  &kp LS(BSLH)  &trans  &trans  &trans  &trans  &kp EQUAL  &trans  &trans  &trans  &kp SEMI  &kp LS(SEMI)  &kp LS(SQT)  &kp SQT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
