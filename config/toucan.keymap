@@ -12,6 +12,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
+        layers = <5>;
 
         // Layer 0: Default (QMK Layer 0をマッピング)
 
