@@ -57,11 +57,5 @@
 &trans  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans  &trans  &trans  &trans  &kp MINUS  &trans  &trans  &kp LSHFT  &kp CARET  &kp ASTERISK  &kp AMPERSAND  &kp PIPE  &trans  &trans  &trans  &trans  &kp EQUAL  &trans  &trans  &trans  &kp SEMI  &kp SEMI  &kp DOUBLE_QUOTES  &kp SQT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
     };
 };
