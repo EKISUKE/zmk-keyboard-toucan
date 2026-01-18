@@ -113,7 +113,16 @@
             input-processors = <
                 &zip_xy_to_scroll_mapper
                 &zip_scroll_scaler 1 5
-                            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT            >;
+                &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT            
+            >;
         };
+    };
+};
+
+/ {
+    automouse_listener: automouse_listener {
+        compatible = "zmk,input-listener";
+        device = <&glidepoint_split>;
+        input-processors = <&zip_temp_layer 3 600>;
     };
 };

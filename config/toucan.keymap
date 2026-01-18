@@ -44,7 +44,7 @@
         // Layer 3: Mouse (QMK Layer 4 - マウスボタン対応)
 
         mouse {
-            display-name = "MOUSE";
+            display-name = "MOUS";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &mkp MCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_COPY  &kp K_PASTE  &trans  &mkp MB4  &mkp MB5  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans
             >;
