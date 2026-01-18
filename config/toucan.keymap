@@ -17,6 +17,21 @@
         bindings = <&mkp LCLK>, <&sk &mkp LCLK>;
     };
 
+    touchpad {
+        compatible = "zmk,behavior-touchpad";
+        taps {
+            tap1 {
+                bindings = <&td_left>;
+            };
+            tap2 {
+                bindings = <&mkp RCLK>;
+            };
+            tap3 {
+                bindings = <&mkp MCLK>;
+            };
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         layers = <5>;
