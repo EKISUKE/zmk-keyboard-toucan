@@ -67,6 +67,11 @@
     };
 };
 
+&glidepoint {
+    status = "okay";
+    input-id = <1>;
+};
+
 &glidepoint_split {
     device = <&glidepoint>;
 
