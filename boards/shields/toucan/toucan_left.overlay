@@ -43,6 +43,11 @@ nice_view_spi: &spi0 {
     ;
 };
 
+&glidepoint {
+    status = "okay";
+    input-id = <1>;
+};
+
 &glidepoint_listener {
     status = "okay";
 };
