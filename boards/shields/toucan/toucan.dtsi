@@ -119,11 +119,18 @@
 };
 
 / {
+    /* 1. プロセッサ自体の定義（ラベル名 zip_automouse_dev を自分で作る） */
+    zip_automouse_dev: zip_automouse_dev {
+        compatible = "zmk,input-processor-automouse-dev";
+        #input-processor-cells = <3>;
+    };
+
+    /* 2. リスナーの設定 */
     automouse_listener: automouse_listener {
         compatible = "zmk,input-listener";
         device = <&glidepoint_split>;
-        
-        /* '&' を外して、プロセッサを直接指定する形式を試す */
-        input-processors = <&zip_xy_scaler 1 1>, <&zip_automouse_dev 1 3 600>;
+        /* &zip_automouse_dev というラベルを使わずに、
+           このファイル内で定義したノード名を直接指定する */
+        input-processors = <&zip_automouse_dev 1 3 600>;
     };
 };
