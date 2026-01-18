@@ -10,6 +10,28 @@
 #define SYM 4
 
 / {
+    td_left: td_left {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&mkp LCLK>, <&sk &mkp LCLK>;
+    };
+
+    touchpad {
+        compatible = "zmk,behavior-touchpad";
+        taps {
+            tap1 {
+                bindings = <&td_left>;
+            };
+            tap2 {
+                bindings = <&mkp RCLK>;
+            };
+            tap3 {
+                bindings = <&mkp MCLK>;
+            };
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         layers = <5>;
