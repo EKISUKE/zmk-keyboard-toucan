@@ -10,7 +10,8 @@ manifest:
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: petejohanson           # zmkfirmware から変更
+      revision: feat/input-behaviors # 以前の revision から変更
       import: app/west.yml
     - name: cirque-input-module
       remote: petejohanson
