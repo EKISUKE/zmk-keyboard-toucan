@@ -124,6 +124,7 @@
     /* マウス操作開始時と終了時の動作を定義 */
     ib_layer_auto: ib_layer_auto {
         compatible = "zmk,input-processor-entry-exit";
+        #input-processor-cells = <0>;
         /* オートマウスレイヤー番号 */
         entry-code = <&mo 3>; 
         /* 操作終了後、何ミリ秒でレイヤーを戻すか（ms） */
