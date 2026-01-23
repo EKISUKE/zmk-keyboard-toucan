@@ -119,12 +119,13 @@
     };
 };
 
+// オートマウスレイヤーの無効化
+/*
 / {
     automouse_listener: automouse_listener {
         compatible = "zmk,input-listener";
         device = <&glidepoint_split>;
-        // オートマウスレイヤーの無効化
-        /* input-processors = <&zip_temp_layer 3 600>; */
-        input-processors = <>;
+        input-processors = <&zip_temp_layer 3 600>;
     };
 };
+*/
