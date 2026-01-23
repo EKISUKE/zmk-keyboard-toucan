@@ -119,13 +119,20 @@
     };
 };
 
-// オートマウスレイヤーの無効化
-/*
+/* オートマウスレイヤー */
 / {
+    /* マウス操作開始時と終了時の動作を定義 */
+    ib_layer_auto: ib_layer_auto {
+        compatible = "zmk,input-processor-entry-exit";
+        /* オートマウスレイヤー番号 */
+        entry-code = <&mo 3>; 
+        /* 操作終了後、何ミリ秒でレイヤーを戻すか（ms） */
+        exit-ms = <600>; 
+    };
+
     automouse_listener: automouse_listener {
         compatible = "zmk,input-listener";
         device = <&glidepoint_split>;
-        input-processors = <&zip_temp_layer 3 600>;
+        input-processors = <&ib_layer_auto>;
     };
 };
-*/
