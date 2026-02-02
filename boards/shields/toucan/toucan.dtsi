@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
+#include <dt-bindings/input/input-event-codes.h>
 
 
 / {
@@ -107,7 +108,10 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&glidepoint_split>;
-        input-processors = <&zip_xy_scaler 250 100>;
+        input-processors = <
+            &zip_xy_scaler 1 4 // 2x mult seems too fast, so lowering to 0.25x
+        >;
+
         scroller {
             layers = <1 2>;
             input-processors = <
@@ -116,24 +120,26 @@
                 &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT            
             >;
         };
+
+        base {
+            layers = <0>;
+            input-processors = <
+                &touch_processor
+            >;
+        };
     };
 };
 
 /* オートマウスレイヤー */
 / {
-    /* マウス操作開始時と終了時の動作を定義 */
-    ib_layer_auto: ib_layer_auto {
-        compatible = "zmk,input-processor-entry-exit";
-        #input-processor-cells = <0>;
-        /* オートマウスレイヤー番号 */
-        entry-code = <&mo 3>; 
-        /* 操作終了後、何ミリ秒でレイヤーを戻すか（ms） */
-        exit-ms = <600>; 
-    };
-
-    automouse_listener: automouse_listener {
-        compatible = "zmk,input-listener";
-        device = <&glidepoint_split>;
-        input-processors = <&ib_layer_auto>;
+    // FIXME turn on smooth scrolling
+    input_processors {
+        touch_processor: touch_processor {
+            compatible = "zmk,input-processor-behaviors";
+            #input-processor-cells = <0>;
+            
+            codes = <INPUT_BTN_TOUCH>; // watch for the 'touch' pseudo button
+            bindings = <&mo 3>; // Activate Layer 3 while held
+        };
     };
 };
