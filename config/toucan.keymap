@@ -10,6 +10,7 @@
 #define MOUSE 3
 #define SYM 4
 
+&mt { quick-tap-ms = <125>; };
 
 / {
     keymap {
