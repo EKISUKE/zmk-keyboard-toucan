@@ -49,3 +49,7 @@ nice_view_spi: &spi0 {
         status = "disabled";
     };
 };
+// toucan.dtsiで定義されたglidepoint_splitも無効化
+&glidepoint_split {
+    status = "disabled";
+};
