@@ -1,0 +1,24 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include "toucan.dtsi" 
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+    };
+
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
+
+&glidepoint_listener {
+    status = "okay";
+};
+
+// kscan_0 を無効化して col-gpios エラーを回避
+&kscan0 {
+    status = "disabled";
+};
