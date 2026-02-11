@@ -17,3 +17,8 @@
 &glidepoint_listener {
     status = "okay";
 };
+
+// kscan_0 を無効化して col-gpios エラーを回避
+&kscan0 {
+    status = "disabled";
+};
