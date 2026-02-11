@@ -43,7 +43,7 @@ nice_view_spi: &spi0 {
     ;
 };
 
-// toucan.dtsiで定義されたglidepointノードを無効化
-&glidepoint_split {
+// toucan.dtsiで定義されたsplit_inputsノードを無効化
+&split_inputs {
     status = "disabled";
 };
