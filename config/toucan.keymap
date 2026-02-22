@@ -11,6 +11,16 @@
 #define SYM 4
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        mouse_btn {
+            bindings = <&kp A>;
+            key-positions = <18 6 19 20 39>;
+            timeout-ms = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         layers = <5>;
@@ -47,7 +57,7 @@
         mouse {
             display-name = "MOUS";
             bindings = <
-&trans  &trans  &trans  &mkp MCLK  &trans  &trans  &mkp MCLK  &mo 1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &mkp RCLK  &mkp MB4  &mkp MB5  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans
+&trans  &trans  &trans  &mkp MCLK  &trans  &trans  &mkp MCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &mkp RCLK  &mkp MB4  &mkp MB5  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(C)  &kp LC(V)  &trans  &mo 1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans
             >;
         };
 
