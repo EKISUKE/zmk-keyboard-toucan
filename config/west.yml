@@ -21,7 +21,7 @@ manifest:
       revision: toucan
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: main
+      revision: v0.3
     - name: prospector-zmk-module   # Prospectorモジュールを追加
       remote: carrefinho
       revision: main
