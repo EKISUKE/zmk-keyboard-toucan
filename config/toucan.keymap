@@ -17,236 +17,236 @@
 
     BASE {
       bindings = <
-        TAB
-        Q
-        W
-        E
-        R
-        T
-        Y
-        U
-        I
-        O
-        P
-        MINUS
-        LCTRL
-        LT 2 A
-        S
-        D
-        F
-        G
-        H
-        J
-        K
-        LT 3 L
-        SEMI
-        MT RCTRL TAB
-        MT LSHIFT LANG2
-        MT LSHIFT Z
-        X
-        C
-        V
-        B
-        N
-        M
-        COMMA
-        LT 2 DOT
-        MT RSHIFT SLASH
-        MT LSHIFT LANG1
-        LT 4 LGUI
-        LT 1 SPACE
-        MT LCTRL ESC
-        BSPC
-        LT 2 ENTER
-        MT RALT ENTER
+        &kp TAB
+        &kp Q
+        &kp W
+        &kp E
+        &kp R
+        &kp T
+        &kp Y
+        &kp U
+        &kp I
+        &kp O
+        &kp P
+        &kp MINUS
+        &kp LCTRL
+        &lt 2 A
+        &kp S
+        &kp D
+        &kp F
+        &kp G
+        &kp H
+        &kp J
+        &kp K
+        &lt 3 L
+        &kp SEMI
+        &mt RCTRL TAB
+        &mt LSHIFT LANG2
+        &mt LSHIFT Z
+        &kp X
+        &kp C
+        &kp V
+        &kp B
+        &kp N
+        &kp M
+        &kp COMMA
+        &lt 2 DOT
+        &mt RSHIFT SLASH
+        &mt LSHIFT LANG1
+        &lt 4 LGUI
+        &lt 1 SPACE
+        &mt LCTRL ESC
+        &kp BSPC
+        &lt 2 ENTER
+        &mt RALT ENTER
       >;
     };
 
     NAV {
       bindings = <
-        TRANS
-        TRANS
-        TRANS
-        LG(UP)
-        TRANS
-        F8
-        LC(LA(F11))
-        HOME
-        UP
-        END
-        GRAVE
-        TRANS
-        TRANS
-        LCTRL
-        LS(LG(LEFT))
-        LG(DOWN)
-        LS(LG(RIGHT))
-        TRANS
-        PGUP
-        LEFT
-        DOWN
-        RIGHT
-        PGDN
-        TRANS
-        TRANS
-        LSHIFT
-        F2
-        F3
-        F4
-        F5
-        F9
-        F10
-        F11
-        F12
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
+        &trans
+        &trans
+        &trans
+        &kp LG(UP)
+        &trans
+        &kp F8
+        &kp LC(LA(F11))
+        &kp HOME
+        &kp UP
+        &kp END
+        &kp GRAVE
+        &trans
+        &trans
+        &kp LCTRL
+        &kp LS(LG(LEFT))
+        &kp LG(DOWN)
+        &kp LS(LG(RIGHT))
+        &trans
+        &kp PGUP
+        &kp LEFT
+        &kp DOWN
+        &kp RIGHT
+        &kp PGDN
+        &trans
+        &trans
+        &kp LSHIFT
+        &kp F2
+        &kp F3
+        &kp F4
+        &kp F5
+        &kp F9
+        &kp F10
+        &kp F11
+        &kp F12
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
       >;
     };
 
     SYS {
       bindings = <
-        TRANS
-        TRANS
-        7
-        8
-        9
-        TRANS
-        TRANS
-        LS(LBKT)
-        LS(RBKT)
-        LS(LG(S))
-        PRSC
-        TRANS
-        TRANS
-        TRANS
-        4
-        5
-        6
-        TRANS
-        LG(TAB)
-        LS(9)
-        LS(0)
-        TRANS
-        BSLH
-        TRANS
-        Studio Unlock
-        TRANS
-        1
-        2
-        3
-        TRANS
-        TRANS
-        LBKT
-        RBKT
-        TRANS
-        SEMI
-        TRANS
-        TRANS
-        0
-        TRANS
-        DEL
-        TRANS
-        TRANS
+        &trans
+        &trans
+        &kp 7
+        &kp 8
+        &kp 9
+        &trans
+        &trans
+        &kp LS(LBKT)
+        &kp LS(RBKT)
+        &kp LS(LG(S))
+        &kp PRSC
+        &trans
+        &trans
+        &trans
+        &kp 4
+        &kp 5
+        &kp 6
+        &trans
+        &kp LG(TAB)
+        &kp LS(9)
+        &kp LS(0)
+        &trans
+        &kp BSLH
+        &trans
+        &studio_unlock
+        &trans
+        &kp 1
+        &kp 2
+        &kp 3
+        &trans
+        &trans
+        &kp LBKT
+        &kp RBKT
+        &trans
+        &kp SEMI
+        &trans
+        &trans
+        &kp 0
+        &trans
+        &kp DEL
+        &trans
+        &trans
       >;
     };
 
     MOUS {
       bindings = <
-        TRANS
-        TRANS
-        TRANS
-        MB3
-        TRANS
-        TRANS
-        MB3
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        MB2
-        MB1
-        TRANS
-        MB2
-        MB4
-        MB5
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        LC(C)
-        LC(V)
-        TRANS
-        MO Layer 1
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        MB1
-        TRANS
-        TRANS
+        &trans
+        &trans
+        &trans
+        &kp MB3
+        &trans
+        &trans
+        &kp MB3
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &kp MB2
+        &kp MB1
+        &trans
+        &kp MB2
+        &kp MB4
+        &kp MB5
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &kp LC(C)
+        &kp LC(V)
+        &trans
+        &mo 1
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &trans
+        &kp MB1
+        &trans
+        &trans
       >;
     };
 
     SYM {
       bindings = <
-        TRANS
-        LS(1)
-        LS(2)
-        LS(3)
-        LS(4)
-        LS(5)
-        Bluetooth 3
-        TRANS
-        TRANS
-        TRANS
-        MINUS
-        TRANS
-        TRANS
-        LCTRL
-        LS(6)
-        LS(8)
-        LS(7)
-        LS(BSLH)
-        Bluetooth 3 1
-        TRANS
-        TRANS
-        TRANS
-        EQUAL
-        TRANS
-        TRANS
-        LSHIFT
-        SEMI
-        LS(SEMI)
-        LS(SQT)
-        SQT
-        Bluetooth 3 2
-        TRANS
-        TRANS
-        TRANS
-        TRANS
-        Bluetooth Clear Selected Profile
-        TRANS
-        TRANS
-        TRANS
-        DEL
-        TRANS
-        TRANS
+        &trans
+        &kp LS(1)
+        &kp LS(2)
+        &kp LS(3)
+        &kp LS(4)
+        &kp LS(5)
+        &bt BT_CLR 0
+        &trans
+        &trans
+        &trans
+        &kp MINUS
+        &trans
+        &trans
+        &kp LCTRL
+        &kp LS(6)
+        &kp LS(8)
+        &kp LS(7)
+        &kp LS(BSLH)
+        &bt BT_CLR 1
+        &trans
+        &trans
+        &trans
+        &kp EQUAL
+        &trans
+        &trans
+        &kp LSHIFT
+        &kp SEMI
+        &kp LS(SEMI)
+        &kp LS(SQT)
+        &kp SQT
+        &bt BT_CLR 2
+        &trans
+        &trans
+        &trans
+        &trans
+        &bt BT_SEL 0
+        &trans
+        &trans
+        &trans
+        &kp DEL
+        &trans
+        &trans
       >;
     };
   };
