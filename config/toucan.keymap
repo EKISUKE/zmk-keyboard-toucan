@@ -140,8 +140,8 @@
         &kp N6
         &trans
         &kp LG(TAB)
-        &kp LS(9)
-        &kp LS(0)
+        &kp LS(N9)
+        &kp LS(N0)
         &trans
         &kp BSLH
         &trans
@@ -216,11 +216,11 @@
     SYM {
       bindings = <
         &trans
-        &kp LS(1)
-        &kp LS(2)
-        &kp LS(3)
-        &kp LS(4)
-        &kp LS(5)
+        &kp LS(N1)
+        &kp LS(N2)
+        &kp LS(N3)
+        &kp LS(N4)
+        &kp LS(N5)
         &bt BT_CLR
         &trans
         &trans
@@ -229,9 +229,9 @@
         &trans
         &trans
         &kp LCTRL
-        &kp LS(6)
-        &kp LS(8)
-        &kp LS(7)
+        &kp LS(N6)
+        &kp LS(N8)
+        &kp LS(N7)
         &kp LS(BSLH)
         &bt BT_CLR
         &trans
