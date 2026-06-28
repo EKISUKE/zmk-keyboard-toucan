@@ -140,8 +140,8 @@
         &kp N6
         &trans
         &kp LG(TAB)
-        &kp LS(N9)
-        &kp LS(N0)
+        &kp LS(9)
+        &kp LS(0)
         &trans
         &kp BSLH
         &trans
@@ -171,6 +171,10 @@
         &trans
         &trans
         &trans
+        &mkp MB3
+        &trans
+        &trans
+        &mkp MB3
         &trans
         &trans
         &trans
@@ -179,16 +183,12 @@
         &trans
         &trans
         &trans
+        &mkp MB2
+        &mkp MB1
         &trans
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
-        &trans
+        &mkp MB2
+        &mkp MB4
+        &mkp MB5
         &trans
         &trans
         &trans
@@ -207,7 +207,7 @@
         &trans
         &trans
         &trans
-        &trans
+        &mkp MB1
         &trans
         &trans
       >;
@@ -215,48 +215,7 @@
 
     SYM {
       bindings = <
-        &trans
-        &kp LS(N1)
-        &kp LS(N2)
-        &kp LS(N3)
-        &kp LS(N4)
-        &kp LS(N5)
-        &bt BT_CLR 0
-        &trans
-        &trans
-        &trans
-        &kp MINUS
-        &trans
-        &trans
-        &kp LCTRL
-        &kp LS(N6)
-        &kp LS(N8)
-        &kp LS(N7)
-        &kp LS(BSLH)
-        &bt BT_CLR 1
-        &trans
-        &trans
-        &trans
-        &kp EQUAL
-        &trans
-        &trans
-        &kp LSHIFT
-        &kp SEMI
-        &kp LS(SEMI)
-        &kp LS(SQT)
-        &kp SQT
-        &bt BT_CLR 2
-        &trans
-        &trans
-        &trans
-        &trans
-        &bt BT_SEL 0
-        &trans
-        &trans
-        &trans
-        &kp DEL
-        &trans
-        &trans
+        &trans  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &bt BT_SEL 0  &trans  &trans  &trans  &kp MINUS  &trans  &trans  &kp LEFT_CONTROL  &kp CARET  &kp ASTERISK  &kp AMPERSAND  &kp PIPE  &bt BT_SEL 1  &trans  &trans  &trans  &kp EQUAL  &trans  &trans  &kp LEFT_SHIFT  &kp SEMI  &kp COLON  &kp DOUBLE_QUOTES  &kp SQT  &bt BT_SEL 2  &trans  &trans  &trans  &trans  &bt BT_CLR  &trans  &trans  &trans  &kp DELETE  &trans  &trans
       >;
     };
   };
